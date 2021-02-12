@@ -19,7 +19,7 @@ Resto Culinary
 <!-- ! Navbar Finish -->
 
 <!-- ! Image Slider Start -->
-<div class="hero-image">
+<div id="home" class="hero-image">
   <div class="slider">
     <div class="slides">
       <!-- * Input Radio Start -->
@@ -73,27 +73,27 @@ Resto Culinary
   <div class="content">
     <div class="imgBx thumbnail">
       <img src="img/cewe/cewe1.png" alt="...">
-      <div class="hover-blank"></div>
+      <div class="overlay"></div>
     </div>
     <div class="imgBx thumbnail">
       <img src="img/cewe/cewe2.png" alt="...">
-      <div class="hover-blank"></div>
+      <div class="overlay"></div>
     </div>
     <div class="imgBx thumbnail">
       <img src="img/cewe/cewe3.png" alt="...">
-      <div class="hover-blank"></div>
+      <div class="overlay"></div>
     </div>
     <div class="imgBx thumbnail">
       <img src="img/cewe/cewe4.png" alt="...">
-      <div class="hover-blank"></div>
+      <div class="overlay"></div>
     </div>
     <div class="imgBx thumbnail">
       <img src="img/cewe/cewe5.png" alt="...">
-      <div class="hover-blank"></div>
+      <div class="overlay"></div>
     </div>
     <div class="imgBx thumbnail">
       <img src="img/cewe/cewe6.png" alt="...">
-      <div class="hover-blank"></div>
+      <div class="overlay"></div>
     </div>
   </div>
   <div class="btn">
@@ -107,56 +107,22 @@ Resto Culinary
   <div class="heading">
     <h2>Gallery</h2>
   </div>
-  <div class="content">
-    <div class="imgBx thumbnail">
-      <img src="img/kom/1.png" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
+
+  <div class="contentGallery">
+    <div class="img-left">
+      <img src="img/kom/1.png" alt="..." class="mega-img">
     </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/2.png" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/3.png" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/4.png" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/5.png" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/6.png" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/7.jpg" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/8.jpg" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/9.jpg" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
-    </div>
-    <div class="imgBx thumbnail">
-      <img src="img/kom/10.jpg" alt="...">
-      <h2>Click Again to Close</h2>
-      <div class="hover-blank"></div>
+    <div class="img-right">
+      <img src="img/kom/1.png" alt="..." class="thumb">
+      <img src="img/kom/2.png" alt="..." class="thumb">
+      <img src="img/kom/3.png" alt="..." class="thumb">
+      <img src="img/kom/4.png" alt="..." class="thumb">
+      <img src="img/kom/5.png" alt="..." class="thumb">
+      <img src="img/kom/6.png" alt="..." class="thumb">
+      <!-- <img src="img/kom/7.jpg" alt="..." class="thumb"> -->
+      <!-- <img src="img/kom/8.jpg" alt="..." class="thumb"> -->
+      <!-- <img src="img/kom/9.jpg" alt="..." class="thumb"> -->
+      <!-- <img src="img/kom/10.jpg" alt="..." class="thumb"> -->
     </div>
   </div>
 </section>
