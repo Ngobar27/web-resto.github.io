@@ -4,164 +4,279 @@ Resto Culinary
 @endsection
 
 @section('content')
-<!-- ! Navbar - Start -->
-<div class="navbar-fixed">
-    <nav class="light-blue darken-2">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Logo</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#dishes">Dishes</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<!-- * Sidenav -->
-<ul class="sidenav" id="mobile-demo">
+<!-- ! Navbar Start -->
+<nav>
+  <a href="index.html" class="brand">Logo</a>
+  <div class="toggle"></div>
+  <ul class="menu">
+    <li class="btn-active"><a href="#home">Home</a></li>
     <li><a href="#dishes">Dishes</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
-</ul>
-<!-- ! Navbar - Finish -->
+  </ul>
+</nav>
+<!-- ! Navbar Finish -->
 
-<!-- ! Image Opening - Start -->
-<div class="slider">
-    <ul class="slides">
-        <li>
-            <img src="img/slider/1.png">
-            <div class="caption left-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-        </li>
-        <li>
-            <img src="img/slider/2.png">
-            <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-        </li>
-        <li>
-            <img src="img/slider/3.png">
-            <div class="caption right-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-        </li>
-    </ul>
+<!-- ! Image Slider Start -->
+<div class="hero-image">
+  <div class="slider">
+    <div class="slides">
+      <!-- * Input Radio Start -->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!-- * Input Radio Finish -->
+      
+      <!-- * Images Start -->
+      <div class="slide first">
+        <img src="img/slider/1.png" alt="Sliders">
+      </div>
+      <div class="slide">
+        <img src="img/slider/2.png" alt="Sliders">
+      </div>
+      <div class="slide">
+        <img src="img/slider/3.png" alt="Sliders">
+      </div>
+      <div class="slide">
+        <img src="img/slider/4.png" alt="Sliders">
+      </div>
+      <!-- * Images Finish -->
+      
+      <!-- * Automatic Navigation Start -->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!-- * Automatic Navigation Finish -->
+    </div>
+    <!-- * Manual Navigation Start -->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!-- * Manual Navigation Finish -->
+  </div>
 </div>
-<!-- ! Image Opening - Finish -->
+<!-- ! Image Slider Finish -->
 
-<!-- ! Dishes - Start -->
-<section id="dishes" class="dishes scrollspy">
-    <div class="container">
-        <h3 class="light center grey-text text-darken-3">Our <span>Dishes</span></h3>
-        <hr class="hr">
-        <div class="row">
-            <div class="col m4 s12">
-                <img src="img/cewe/cewe1.png" alt="Dishes" class="responsive-img materialboxed">
-            </div>
-            <div class="col m4 s12">
-                <img src="img/cewe/cewe2.png" alt="Dishes" class="responsive-img materialboxed">
-            </div>
-            <div class="col m4 s12">
-                <img src="img/cewe/cewe3.png" alt="Dishes" class="responsive-img materialboxed">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col m4 s12">
-                <img src="img/cewe/cewe4.png" alt="Dishes" class="responsive-img materialboxed">
-            </div>
-            <div class="col m4 s12">
-                <img src="img/cewe/cewe5.png" alt="Dishes" class="responsive-img materialboxed">
-            </div>
-            <div class="col m4 s12">
-                <img src="img/cewe/cewe6.png" alt="Dishes" class="responsive-img materialboxed">
-            </div>
-        </div>
-
-        <div class="heading">
-            <a href="#" class="btn blue darken-3">View More</a>
-        </div>
+<!-- ! Dishes Start -->
+<section id="dishes" class="dishes">
+  <div class="heading">
+    <h2>Our Dishes</h2>
+  </div>
+  <div class="content">
+    <div class="imgBx thumbnail">
+      <img src="img/cewe/cewe1.png" alt="...">
+      <div class="hover-blank"></div>
     </div>
-</section>
-<!-- ! Dishes - Finish -->
-
-<!-- ! Gallery - Start -->
-<section id="gallery" class="gallery scrollspy">
-    <div class="container">
-        <h3 class="light center grey-text text-darken-3">Gallery</h3>
-        <hr class="hr">
-        <div class="row">
-            <div class="col m3 s12">
-                <img src="img/portfolio/1.png" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/2.png" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/3.png" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/4.png" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col m3 s12">
-                <img src="img/portfolio/5.png" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/6.png" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/7.jpg" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/8.jpg" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col m3 s12"></div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/9.jpg" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12">
-                <img src="img/portfolio/10.jpg" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-            <div class="col m3 s12"></div>
-        </div>
+    <div class="imgBx thumbnail">
+      <img src="img/cewe/cewe2.png" alt="...">
+      <div class="hover-blank"></div>
     </div>
+    <div class="imgBx thumbnail">
+      <img src="img/cewe/cewe3.png" alt="...">
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/cewe/cewe4.png" alt="...">
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/cewe/cewe5.png" alt="...">
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/cewe/cewe6.png" alt="...">
+      <div class="hover-blank"></div>
+    </div>
+  </div>
+  <div class="btn">
+    <a href="#">View All</a>
+  </div>
 </section>
-<!-- ! Gallery - Finish -->
+<!-- ! Dishes Finish -->
 
-<!-- ! About - Start -->
+<!-- ! Gallery Start -->
+<section id="gallery" class="gallery">
+  <div class="heading">
+    <h2>Gallery</h2>
+  </div>
+  <div class="content">
+    <div class="imgBx thumbnail">
+      <img src="img/kom/1.png" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/2.png" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/3.png" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/4.png" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/5.png" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/6.png" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/7.jpg" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/8.jpg" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/9.jpg" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+    <div class="imgBx thumbnail">
+      <img src="img/kom/10.jpg" alt="...">
+      <h2>Click Again to Close</h2>
+      <div class="hover-blank"></div>
+    </div>
+  </div>
+</section>
+<!-- ! Gallery Finish -->
+
+<!-- ! About Start -->
 <section id="about" class="about">
-    <div class="container">
-        <h3 class="light center grey-text text-darken-3">About Us</h3>
-        <hr class="hr">
-        <div class="row">
-            <div class="col m6">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sunt iusto dolores aliquid enim dolorem aut veniam, adipisci asperiores nemo quia quaerat magni voluptate quas possimus ad at ut cum, repellendus optio. Tempore eum pariatur delectus dicta ab, odit quam, possimus culpa aliquam eligendi asperiores nesciunt illum? Magnam, fugiat natus?
-                    <br><br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In facere accusantium debitis corporis ullam ad, nihil illo aspernatur eum nobis, commodi corrupti minima, impedit consequatur magnam provident. Ipsum porro, repellat nihil voluptatibus illum accusamus nam necessitatibus recusandae itaque neque natus doloremque iusto quod esse eaque quam rem fugit! Corporis, harum.
-                </p>
-            </div>
-            <div class="col m6">
-                <img src="img/portfolio/3.png" alt="Gallery" class="responsive-img materialboxed">
-            </div>
-        </div>
+  <div class="heading">
+    <h2>About Us</h2>
+  </div>
+  <div class="row">
+    <div class="col-left slider-left">
+      <h3>Visi:</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime enim rerum nemo accusantium ipsam, temporibus natus? Ullam doloribus odit nemo maxime. Deserunt illo necessitatibus reprehenderit.
+      </p>
+      <h3>Misi:</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, doloremque cupiditate deleniti voluptates explicabo commodi aperiam, recusandae quia officiis veniam distinctio totam error repellendus. Nostrum.
+      </p>
     </div>
+    <div class="col-right slider-right">
+      <div class="imgBx">
+        <img src="img/kom/7.jpg" alt="...">
+      </div>
+    </div>
+  </div>
 </section>
-<!-- ! About - Finish -->
+<!-- ! About Finish -->
+
+<!-- ! Contact Start -->
+<section id="contact" class="contact">
+  <div class="heading">
+    <h2>Contact Us</h2>
+  </div>
+
+  <div class="contentInfo">
+    <div class="contact-left">
+      <h3>Contact Info</h3>
+      <div class="contactBx">
+        <div class="box">
+          <div class="icon">
+            <i class='bx bxs-map'></i>
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>Jl. Kemanggisan 22 Rt.05/03 Komplek Citra Lestari Baru Blok N nomor 6 Tangerang Kota, Karawaci, Banten 14155</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class='bx bxs-phone'></i>
+          </div>
+          <div class="text">
+            <h3>Phone Number</h3>
+            <p>+62 812-5569-2202</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class='bx bxs-envelope'></i>
+          </div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>resto_culiner@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <h3>Maps Location</h3>
+      <div class="maps">
+        <a href="#" class="map">
+          <img src="img/cewe/cewe2.png" alt="...">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="formBx">
+    <div class="form-left">
+      <form>
+        <input type="text" name="" placeholder="Full Name">
+        <input type="email" name="" placeholder="Email">
+      </form>
+    </div>
+    <div class="form-right">
+      <form>
+        <textarea placeholder="Your Message"></textarea>
+      </form>
+    </div>
+  </div>
+
+  <form class="outSide">
+    <input type="submit" value="send">
+  </form>
+</section>
+<!-- ! Contact Finish -->
+
+<!-- ! Footer Start -->
+<footer>
+  <ul class="sosmed">
+    <li>
+      <a href="#">
+        <img src="img/facebook.png" alt="...">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="img/instagram.png" alt="...">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="img/twitter.png" alt="...">
+      </a>
+    </li>
+  </ul>
+  <div class="copy">Copyright &copy 2021. All Right Reserved.</div>
+</footer>
+<!-- ! Footer Finish -->
 @endsection

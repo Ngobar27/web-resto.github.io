@@ -2,29 +2,28 @@
 <html>
 
 <head>
-    <!-- TODO: Let browser know website is optimized for mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- TODO: Import Google Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- TODO: Box Icon URL -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- TODO: Import materialize.css -->
-    <link type="text/css" rel="stylesheet" href="{{ asset('css/materialize.min.css') }}" media="screen,projection" />
-
-    <!-- TODO: Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    @yield('css')
-    <title>@yield('title')</title>
+  <!-- TODO: Custom CSS -->
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  @yield('css')
+  <title>@yield('title')</title>
 </head>
 
-<body class="scrollspy">
-    @yield('content')
-    <!-- TODO: JavaScript at end of body for optimized loading -->
-    <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
+<body>
+  @yield('content')
+  <!-- TODO: JQuery -->
+  <script src="{{ asset ('js/jquery-3.5.1.min.js') }}"></script>
+  @yield('js')
 
-    <!-- TODO: Custom Javascript -->
-    <script src="{{ asset('js/script.js') }}"></script>
-    @yield('js')
+  <!-- TODO: Custom Javascript -->
+  <script src="{{ asset('js/script.js') }}"></script>
+  @yield('js')
 </body>
 
 </html>
